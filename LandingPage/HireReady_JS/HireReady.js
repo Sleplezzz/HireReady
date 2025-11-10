@@ -4,6 +4,15 @@ const navMenu = document.getElementById('navMenu');
 menuToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
+
+// Cerrar menú al hacer click en un enlace
+const navLinks = document.querySelectorAll('.nav-menu a');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+    });
+});
+
 // Smooth scroll para navegación
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -11,16 +20,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
             const headerOffset = 80;
-      const headerOffset = 80;
             const elementPosition = target.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
             window.scrollTo({
                 top: offsetPosition,
                 behavior: 'smooth'
-          });
+            });
         }
     });
-});  
+});
 // parte 2
 // Cambiar estilo del header al hacer scroll
 window.addEventListener('scroll', () => {
