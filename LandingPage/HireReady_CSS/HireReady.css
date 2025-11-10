@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
     --primary-green: #2D6A5F;
     --secondary-green: #3D8275;
@@ -246,6 +247,7 @@ body {
     background: linear-gradient(90deg, var(--accent-green), var(--secondary-green));
     border-radius: 2px;
 }
+
 .caracteristicas-content {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
@@ -271,7 +273,6 @@ body {
     border-left: 3px solid var(--accent-green);
     transition: all 0.3s ease;
 }
-/* parte 2*/
 
 .caracteristica-item:hover {
     border-left-color: var(--secondary-green);
