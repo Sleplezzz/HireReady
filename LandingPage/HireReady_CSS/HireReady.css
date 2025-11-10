@@ -25,6 +25,7 @@ body {
     line-height: 1.6;
     color: var(--text-dark);
 }
+
 .container {  /* Contenedor centrado */
     max-width: 1200px;
     margin: 0 auto;
@@ -64,6 +65,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .nav-menu {
     display: flex;
     list-style: none;
@@ -78,6 +80,7 @@ body {
     font-weight: 500;
     position: relative;
 }
+
 .nav-menu a:not(.btn-acceder):hover {
     transform: translateY(-2px);
 }
@@ -548,3 +551,4 @@ body {
     font-size: 0.95rem;
     opacity: 0.9;
 }
+
