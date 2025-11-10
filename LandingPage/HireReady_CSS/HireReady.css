@@ -244,4 +244,10 @@ body {
     background: linear-gradient(90deg, var(--accent-green), var(--secondary-green));
     border-radius: 2px;
 }
+.caracteristicas-content {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 5rem;
+    align-items: center;
+}
 /* parte 2*/
